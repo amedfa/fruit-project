@@ -1,0 +1,77 @@
+/* Global
+================================ */
+body {
+  font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+p {
+  font-size: 0.90em;
+	margin-bottom: 1.8em;
+}
+.radius {
+  border-radius: 10px;
+}
+
+h5, h4 {
+   text-transform: uppercase;
+}
+h5 {
+  margin-bottom: 0;
+}
+/* Card
+================================ */
+.card {
+  border: none;
+  text-align: center;
+}
+
+
+
+.card-divider {
+  background-color: rgba(0,0,0,0);
+}
+
+.largoDesc {
+  background-color: #7471711a;
+  border-radius: 10px;
+}
+.largoDesc img {
+    border-radius: 0 10px 10px 0;
+}
+/* Type
+================================ */
+
+/* Layout
+================================ */
+
+/* Banner Headline
+================================= */
+
+/* Logos & Icons
+================================= */
+img:hover{
+  width: 110%;
+}
+
+
+/* Form
+================================= */
+
+/* Buttons
+================================= */
+
+/* Media Queries
+================================= */
+
+
+@media (max-width: 1024px) {
+  img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 640px) {
+  img {
+    max-width: 60%;
+  }
+}
