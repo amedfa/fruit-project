@@ -50,11 +50,9 @@ h5 {
 
 /* Logos & Icons
 ================================= */
-img:hover{
-  width: 110%;
+.row {
+  padding-top: 40px;
 }
-
-
 /* Form
 ================================= */
 
@@ -69,9 +67,17 @@ img:hover{
   img {
     max-width: 80%;
   }
+  .toolsFruit p, .toolsFruit h5 {
+    font-size: 0.70em;
+  }
 }
 @media (max-width: 640px) {
   img {
     max-width: 60%;
   }
+  .toolsFruit p, .toolsFruit h5 {
+    font-size: 0.90em;
+  }
+
+
 }
