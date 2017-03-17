@@ -2,263 +2,127 @@
 ================================ */
 body {
   font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	color: #3a3a3a;
+  line-height: 1.6;
+  color: #3a3a3a;
 }
 p {
   font-size: 0.90em;
-	margin-bottom: 1.8em;
+  margin-bottom: 1.8em;
 }
 .radius {
   border-radius: 10px;
 }
 
 h5, h4 {
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 h5 {
   margin-bottom: 0;
 }
-/* Card
-================================ */
-.card {
-  border: none;
-  text-align: center;
-}
-
-
-
-/*.card-divider {
-  background-color: rgba(0,0,0,0);
-}*/
-
-.largoDesc {
-  background-color: #7471711a;
-  border-radius: 10px;
-}
-.largoDesc img {
-    border-radius: 0 10px 10px 0;
-}
-/* Type
-================================ */
-
-/* Layout
-================================ */
-
-/* Banner Headline
-================================= */
-
-/* Logos & Icons
-================================= */
 .row {
   padding-top: 40px;
 }
 
-.newsText p{
-  text-align: justify;
+
+.tabs-title {
+  display: inline-block;
+  float: none;
 }
 
-
-/* Form
-================================= */
-
-/* Buttons
-================================= */
-
-/* Media Queries
-================================= */
-@media (max-width: 1260px) {
-  .productFruit, .textLema {
-    max-width: 90%;
-  }
-
+/* Side Bar
+================================ */
+.pictureUser {
+  border-radius: 50%;
 }
 
-@media (max-width: 1024px) {
-  img {
-    max-width: 80%;
-  }
-  .toolsFruit p, .toolsFruit h5 {
-    font-size: 0.70em;
-  }
-  .productFruit img {
-    max-width: 60%;
-  }
-  .productFruit, .textLema  {
-    max-width: 90%;
-  }
-
-}
-@media (max-width: 640px) {
-  img {
-    max-width: 60%;
-  }
-  .toolsFruit p, .toolsFruit h5 {
-    font-size: 0.90em;
-  }
-
-  .productFruit  {
-    max-width: 100%;
-  }
-
-
+.box-icon {
+  background-color: #569;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+.box-icon img {
+  border-radius: 50%;
+  display: table;
+  height: 100px;
+  margin:  0 auto;
+  width: 100px;}
 
-/**/
-/*
-$white: #fff;
-$nav-text-color: $white;
-$nav-height: 75px;
-$nav-background: #2c3840;
+  /* Top Bar
+  ================================ */
+  .top-bar ,.top-bar li ,.top-bar button, .off-canvas {
+    background: #2c3840; }
 
-$font-family: */
-/*$offcanvas-padding: 20px;*/
-/*
-.offCanvasRight {
-  background: #2c3840;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #2c3840;
-  height: 75px;
-  font-family: 'Titillium Web', sans-serif;
-  margin-bottom: 75px;
-
-  .nav-bar-logo {
-    padding: 1.8rem;
-  }
-
-  li {
-     background: #2c3840;
-     color: #fff;
-  }
-
-  a {
-    color: #fff;
-
-    &:hover {
-      color: #2c3840;
-    }
-  }
-
-  @media screen and (max-width: 39.9375em) {
-    height: 75px/1.4;
-  }
-
-  .offcanvas-trigger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.6rem;
-    color: #2c3840;
-    font-family:'Titillium Web', sans-serif;
-    text-transform: uppercase;
-    background-color: lighten(#2c3840, 20%);
-    transition: background-color 0.2s ease-in;
-    cursor: pointer;
-
-    .offcanvas-trigger-text {
-      margin-right: 0.25rem;
-      margin-top: 0.25rem;
-    }
-
-    &:hover {
-      background-color: lighten(#2c3840, 30%);
-    }
-
-    @media screen and (max-width: 39.9375em) {
-      padding: 0.9rem;
-    }
-  }
-}
-
-.off-canvas {
-  background: #2c3840;
-  padding: 20px;
-  color: #fff;
-  font-family: 'Titillium Web', sans-serif;
-
-  > .menu {
-    margin-bottom: 1rem;
-  }
-
-  .menu a {
-    color: #fff;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    transition: color .2s ease-in;
-
-    &:hover {
+    .top-bar li, .top-bar a, .top-bar ul , .off-canvas li ,.off-canvas a, .off-canvas ul {
       color: #fff;
     }
-  }
-
-  .fa {
-    color: #fff;
-  }
-
-  .is-accordion-submenu-parent > a::after {
-    border-color: #fff transparent transparent;
-  }
-
-  .social-links {
-    margin-left: 20px;
-
-    li {
-      margin-right: 5px;
+    /* Card
+    ================================ */
+    .card {
+      border: none;
+      text-align: center;
     }
 
-    a:hover .fa {
-      color: #fff;
-      transition: color .2s ease-in;
+    /* Type
+    ================================ */
+    .newsText p{
+      text-align: justify;
     }
 
-    .fa {
-      font-size: 2.2rem;
+
+    /* Layout
+    ================================ */
+
+    /* Banner Headline
+    ================================= */
+
+    /* Logos & Icons
+    ================================= */
+
+
+
+    /* Form
+    ================================= */
+
+
+    /* Buttons
+    ================================= */
+
+    /* Media Queries
+    ================================= */
+    /* and max-width 1440px, large screen-only  */
+    @media (max-width: 90em) {
+      .productFruit, .textLema {
+        max-width: 90%;
+      }
+
     }
-  }
-}
+    /*max-width 1024px medium*/
+    @media (max-width: 64em) {
+      img {
+        max-width: 80%;
+      }
+      .toolsFruit p, .toolsFruit h5 {
+        font-size: 0.70em;
+      }
+      .productFruit img {
+        max-width: 60%;
+      }
+      .productFruit, .textLema  {
+        max-width: 90%;
+      }
 
-.body-info {
-  text-align: center;
-  font-family:'Titillium Web', sans-serif;
-  color: #2c3840;
+    }
+    /* max-width 640px*/
+    @media (max-width: 40em) {
+      img {
+        max-width: 60%;
+      }
+      .toolsFruit p, .toolsFruit h5 {
+        font-size: 0.90em;
+      }
 
-  .button {
-    margin: 1rem 0;
-    padding: 0.85em 2em;
-  }
-}
-
-.is-open + .off-canvas-content .hamburger {
-
-  .line:nth-child(1),
-  .line:nth-child(3) {
-    width: 12px;
-  }
-
-  .line:nth-child(1) {
-    transform: translateX(-5px) rotate(-45deg);
-  }
-
-  .line:nth-child(3) {
-    transform: translateX(-5px) rotate(45deg);
-  }
-}
-
-.hamburger .line {
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  display: block;
-  margin: 3px auto;
-  transition: all 0.3s ease-in-out;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}*/
+      .productFruit  {
+        max-width: 100%;
+      }
+    }

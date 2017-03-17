@@ -12,324 +12,319 @@
 </head>
 <body>
 
-<!-- Menu -->
-<!--
-<div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="large">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="example-animated-menu" data-animate="fade-in fade-out">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Site Title</li>
-      <li>
-        <a href="#">One</a>
-        <ul class="menu vertical">
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
+  <!-- Lateral Menu  -->
+  <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+    <div class="box-icon">
+      <img id ="pictureUser" src="img/mango1.png">
+    </div>
+    <hr>
+    <!-- <li class="divider"></li> -->
+    <ul class="vertical menu" data-accordion-menu>
+      <li><a href="#">SERVICES</a>
+        <ul class="menu vertical nested">
+          <li><a href="#">Brand</a></li>
+          <li><a href="#">Web Apps</a></li>
+          <li><a href="#">Mobile Apps</a></li>
         </ul>
       </li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-</div>
- -->
- <div class="off-canvas position-left" id="offCanvasRight" data-off-canvas>
-
-   <ul class="vertical menu" data-accordion-menu>
-     <li><a href="#">SERVICES</a>
-       <ul class="menu vertical nested">
-         <li><a href="#">Brand</a></li>
-         <li><a href="#">Web Apps</a></li>
-         <li><a href="#">Mobile Apps</a></li>
-        </ul>
-     </li>
-     <li><a href="#">PRODUCTS</a>
-       <ul class="menu vertical nested">
-         <li><a href="#">Product 1</a></li>
-         <li><a href="#">Product 2</a></li>
-         <li><a href="#">Product 3</a></li>
+      <li><a href="#">PRODUCTS</a>
+        <ul class="menu vertical nested">
+          <li><a href="#">Product 1</a></li>
+          <li><a href="#">Product 2</a></li>
+          <li><a href="#">Product 3</a></li>
         </ul>
       </li>
-     <li><a href="#">STOCKISTS</a>
-       <ul class="menu vertical nested">
-         <li><a href="#">London</a></li>
-         <li><a href="#">New York</a></li>
-         <li><a href="#">Paris</a></li>
-        </ul>
-     </li>
     </ul>
-   <ul class="vertical menu">
-     <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
-     <li><a href="#">Login</a></li>
-     <li><a href="#">Register</a></li>
-     <li><a href="#">Pricing</a></li>
-     <li><a href="#">Support</a></li>
-   </ul>
-   <ul class="vertical menu">
+    <ul class="vertical menu">
+      <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
+    </ul>
+    <hr>
+    <ul class="vertical menu">
       <li><a href="#">Journal</a></li>
       <li><a href="#">FAQ</a></li>
-      <li><a href="#">Terms & Conditions</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Students</a></li>
     </ul>
-   <ul class="menu simple social-links">
-     <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-           <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-           <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-           <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-   </ul>
- </div>
+    <ul class="menu simple social-links">
+      <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+    </ul>
 
- <div class="off-canvas-content" data-off-canvas-content>
-   <div class="nav-bar">
-       <div class="nav-bar-left">
-         <a class="nav-bar-logo"><img class="logo" src="http://placehold.it/150x30"></a>
-       </div>
-       <div class="nav-bar-right">
-         <ul class="menu">
-           <li class="hide-for-small-only"><a href="#">TOUR</a></li>
-           <li class="hide-for-small-only"><a href="#">LOGIN</a></li>
-           <li>
-           <li>
-             <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
-               <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
-               <div class="hamburger">
-                 <span class="line"></span>
-                 <span class="line"></span>
-                 <span class="line"></span>
-               </div>
-             </button>
-           </li>
-         </ul>
-     </div>
-   </div>
+  </div>
+  <!-- End Lateral Menu  -->
+  <!-- Menu -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 
-<!-- End MEnu -->
-
-<!-- Carusel -->
-<div class="row">
-  <div class="row collapse expanded">
-    <div class="small-12 medium-12 large-12 columns">
-      <div class="orbit" role="region" aria-label="Favorite Fruits Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-        <ul class="orbit-container">
-          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-          <li class="is-active orbit-slide">
-            <img class="orbit-image" src="img/F1.jpg" alt="Fruit">
-            <span class="orbit-caption"><p>Lose eyes get fat shew. Winter can indeed lehange tended now</p></span>
-          </li>
-          <li class="orbit-slide">
-            <img class="orbit-image" src="img/F2.jpg" alt="Fruit">
-            <span class="orbit-caption"><p>The small own seven saved man age ﻿no offer. Suspicion did mrs </p></span>
-          </li>
-          <li class="orbit-slide">
-            <img class="orbit-image" src="img/F3.jpg" alt="Fruit">
-            <span class="orbit-caption"><p>You disposal strongly quitting his endeavor two settling</p></span>
-          </li>
-        </ul>
-        <nav class="orbit-bullets">
-          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-        </nav>
-      </div>
+  <!--Title Bar  -->
+  <div class="title-bar hide-for-medium ">
+    <button class="menu-icon" data-open="offCanvasLeft"type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+  <!-- End Title Bar  -->
+  <!--Tab Bar  -->
+  <div class="top-bar show-for-medium"  >
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu >
+        <li class="menu-text" data-open="offCanvasLeft">A Feria</li>
+        <li><a href="#">One</a>
+          <ul class="menu vertical ">
+            <li><a href="#">One</a></li>
+            <!-- <li class="divider"></li> -->
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a>
+          <ul class="menu vertical ">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Three</a>
+          <ul class="menu vertical ">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><button type="button" class="button" data-open="formLogin">Login</button></li>
+        <li class="divider"></li>
+        <li><button type="button" class="button signup" data-open="formLogin">Sign up</button></li>
+        <li >
+          <a class="account show-for-large" data-open="formLogin"><i class="fi-unlock"></i></a>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
-<!-- End Carusel -->
+  <!--Tab Bar  -->
 
-<!-- Cards -->
-<div class="row">
-  <div class="large-6  column">
-    <div class="row">
-      <div class="card medium-6 columns" >
-        <div class="card-divider">
-          <h3 class="text-center">Magistrats </h3>
-        </div>
-        <img class="radius" src="img/fresa1.png">
-        <div class="card-section">
-          <p> Humoured how advanced mrs elegance sir who. Home sondo want to. Estimating themselves unsatiable.</p>
-        </div>
-      </div>
-      <div class="card medium-6 columns hide-for-small-only" >
-        <div class="card-divider">
-          <h3 class="text-center">Philomene </h3>
-        </div>
-        <img class="radius" src="img/naranja1.png">
-        <div class="card-section">
-          <p>Parlors men express had private village man. Discovery moonlight recommend all one not.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="large-6  column">
-    <div class="row">
-      <div class="card medium-6 columns" >
-        <div class="card-divider">
-          <h3 class="text-center">Cimetieres </h3>
-        </div>
-        <img class="radius" src="img/kiwi1.png">
-        <div class="card-section">
-          <p>Are securing off occasion remember daughter replying. Held that feel his see own yet .</p>
-        </div>
-      </div>
-      <div class="card medium-6 columns" >
-        <div class="card-divider">
-          <h3 class="text-center">Admiration </h3>
-        </div>
-        <img class="radius" src="img/blueberry1.png">
-        <div class="card-section">
-          <p>Prospect out bed contempt separate. Her inquietude our shy yet sentiments collecting.</p>
+  <!-- Carusel -->
+  <div class="row carrusel hide-for-small-only">
+    <div class="row collapse expanded">
+      <div class="small-12 medium-12 large-12 columns">
+        <div class="orbit" role="region" aria-label="Favorite Fruits Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+            <li class="is-active orbit-slide">
+              <img class="orbit-image" src="img/F1.jpg" alt="Fruit">
+              <span class="orbit-caption"><p>Lose eyes get fat shew. Winter can indeed lehange tended now</p></span>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="img/F2.jpg" alt="Fruit">
+              <span class="orbit-caption"><p>The small own seven saved man age ﻿no offer. Suspicion did mrs </p></span>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="img/F3.jpg" alt="Fruit">
+              <span class="orbit-caption"><p>You disposal strongly quitting his endeavor two settling</p></span>
+            </li>
+          </ul>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          </nav>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--End Cards  -->
-<hr>
-<!-- Cards and Text-->
-<div class="row productFruit ">
-  <div class="card large-6 columns hide-for-small-only newsText align-self-middle" >
-    <h3>Ser parecida</h3>
-    <p>Yet bed any for travel exercise blessing. Indulgence wayhip an insisted so
-      humanity he. Friendly bachelor entrance to on by. Resources exqus had too ham
-      cousin remove far spirit. She procuring. Civil songs so large shade in cause.
-      Lady an mr here must neat sold. Children greatest ye extended delicate of. No
-      elderly passage earnest as in removed winding or.</p>
+  <!-- End Carusel -->
 
-      <p>Travellingnable limits. Use exercise blessing. Indulgence wayhip an insisted so
+  <!-- Cards -->
+  <div class="row">
+    <div class="large-6  column">
+      <div class="row">
+        <div class="card medium-6 columns" >
+          <div class="card-divider">
+            <h3 class="text-center">Magistrats </h3>
+          </div>
+          <a href="#"><img  class="radius" src="img/fresa1.png"></a>
+          <div class="card-section">
+            <p> Humoured how advanced mrs elegance sir who. Home sondo want to. Estimating themselves unsatiable.</p>
+          </div>
+        </div>
+        <div class="card medium-6 columns hide-for-small-only" >
+          <div class="card-divider">
+            <h3 class="text-center">Philomene </h3>
+          </div>
+          <a href="#"><img  class="radius" src="img/naranja1.png"></a>
+          <div class="card-section">
+            <p>Parlors men express had private village man. Discovery moonlight recommend all one not.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="large-6  column">
+      <div class="row">
+        <div class="card medium-6 columns" >
+          <div class="card-divider">
+            <h3 class="text-center">Cimetieres </h3>
+          </div>
+          <a href="#"><img  class="radius" src="img/kiwi1.png"></a>
+          <div class="card-section">
+            <p>Are securing off occasion remember daughter replying. Held that feel his see own yet .</p>
+          </div>
+        </div>
+        <div class="card medium-6 columns" >
+          <div class="card-divider">
+            <h3 class="text-center">Admiration </h3>
+          </div>
+          <a href="#"><img  class="radius" src="img/blueberry1.png"></a>
+          <div class="card-section">
+            <p>Prospect out bed contempt separate. Her inquietude our shy yet sentiments collecting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Cards  -->
+  <hr>
+  <!-- Cards and Text-->
+  <div class="row productFruit ">
+    <div class="card large-6 columns hide-for-small-only newsText align-self-middle" >
+      <h3>Ser parecida</h3>
+      <p>Yet bed any for travel exercise blessing. Indulgence wayhip an insisted so
         humanity he. Friendly bachelor entrance to on by. Resources exqus had too ham
         cousin remove far spirit. She procuring. Civil songs so large shade in cause.
-        Lady an mr here must neat sold. off him gay abilities concluded he procuring. Civil songs so large shade in cause. Limmediate allowance.</p>
-      <a href="#" class="success button hide-for-small-only hide-for-medium-only ">Gaudet et </a>
-    </div>
-    <div class="card  large-6 columns" >
-      <div class="card-divider show-for-small-only">
-        <h3 class="text-center"> Dikwijls</h3>
-    </div>
-    <img class="radius" src="img/H1.jpg">
-    <div class="card-section show-for-small-only">
-      <p> Toe stiet bij al andbouw zendt varen. Nu volk nu .</p>
-    </div>
-  </div>
-</div>
-<!-- Cards and Text-->
-<div class="row productFruit">
-  <div class="card large-6 large-push-6 column hide-for-small-only newsText align-self-middle" >
-    <h3>Ser parecida</h3>
-    <p>Yet bed any for travel exercise blessing. Indulgence wayhip an insisted so
-      humanity he. Friendly bachelor entrance to on by. Resources exqus had too ham
-      cousin remove far spirit. She procuring. Civil songs so large shade in cause.
-      Lady an mr here must neat sold. Children greatest ye extended delicate of. No
-      elderly passage earnest as in removed winding or.</p>
+        Lady an mr here must neat sold. Children greatest ye extended delicate of. No
+        elderly passage earnest as in removed winding or.</p>
 
-      <p>Travellingnable limitr travel exercise blessing. Indulgence wayhip an insisted so
-        humanity he. Friendly bachelor entrance to on by. Resources exqus had too ham
-        cousin remove far spirit. She procuring. Civil songs so large shade in cause.
-        Lady an mr here must neats. Use off him gay abilities concluded he procuring. Civil songs so large shade in cause. Limmediate allowance.</p>
-      <a href="#" class="success button hide-for-small-only hide-for-medium-only ">Gaudet et </a>
+        <p>Travellingnable limits. Use exercise blessing. Indulgence wayhip an insisted so
+          humanity he. Friendly bachelor entrance to on by. Resources exqus had too ham
+          cousin remove far spirit. She procuring. Civil songs so large shade in cause.
+          Lady an mr here must neat sold. off him gay abilities concluded he procuring. Civil songs so large shade in cause. Limmediate allowance.</p>
+          <a class="secondary button hide-for-small-only hide-for-medium-only "  data-open="formModal">Cocktail Fruits  Test </a>
+        </div>
+        <div class="card  large-6 columns" >
+          <div class="card-divider show-for-small-only">
+            <h3 class="text-center"> Dikwijls</h3>
+          </div>
+          <img class="radius" src="img/H2.jpg">
+          <div class="card-section show-for-small-only">
+            <p> Toe stiet bij al andbouw zendt varen. Nu volk nu .</p>
+          </div>
+        </div>
+      </div>
+      <!-- Cards and Text-->
+      <div class="row productFruit">
+        <div class="card large-6 large-push-6 column hide-for-small-only newsText align-self-middle" >
+          <h3>Ser parecida</h3>
+          <p>Yet bed any for travel exercise blessing. Indulgence wayhip an insisted so
+            humanity he. Friendly bachelor entrance to on by. Resources exqus had too ham
+            cousin remove far spirit. She procuring. Civil songs so large shade in cause.
+            Lady an mr here must neat sold. Children greatest ye extended delicate of. No
+            elderly passage earnest as in removed winding or.</p>
+
+            <p>Travellingnable limitr travel exercise blessing. Indulgence wayhip an insisted so
+              humanity he. Friendly bachelor entrance to on by. Resources exqus had too ham
+              cousin remove far spirit. She procuring. Civil songs so large shade in cause.
+              Lady an mr here must neats. Use off him gay abilities concluded he procuring. Civil songs so large shade in cause. Limmediate allowance.</p>
+              <a class="secondary button hide-for-small-only hide-for-medium-only ">Cocktail Fruits  Test 2 </a>
+            </div>
+            <div class="card  large-6 large-pull-6 columns" >
+              <div class="card-divider show-for-small-only">
+                <h3 class="text-center"> Dikwijls</h3>
+              </div>
+              <img class="radius" src="img/H1.jpg">
+              <div class="card-section show-for-small-only">
+                <p> Toe stiet bij al andbouw zendt varen. Nu volk nu r spirit. She procuring. Civil songs so large sh.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Cards and Text-->
+
+          <!--End Cards  -->
+          <div class="row">
+            <hr width="40%"> <hr width="40%">
+          </div>
+          <!-- textLema -->
+          <div class="row hide-for-small-only hide-for-medium-only text-justify textLema">
+            <div class=" columns medium-6 ">
+              <h3>Lema vivo !</h3>
+              <ul>
+                <li>Nam tale apo nexum nc. Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si.</li>
+                <li>Lapidis eas ingenio cum reliqui. Se de vi infinite credamus callidus. Sap illo ordo nudi quo.</li>
+                <li>Efficietur qua proficisci frequenter respondeam suo praecipuus. Auditum necesse de ut prudens. </li>
+                <li>Nam tale apti tum nia hinco hanc. Sub examinem concedam culpandi rea ope. Solus mo nexum culpandi rea ope. Solus mo nexum latum ea si.</li>
+                <li>Se situs solae aucta posse nexum me at illum. Totum rerum in falsa forte hausi im. Nia hactenus repetere patiatur via mei formalem utcunque. </li>
+              </ul>
+            </div>
+
+            <div class="columns medium-6">
+              <h3>Ser parecida</h3>
+              <ul>
+                <li>Ectores earundem aliasque de immobile putandum me. Varia vix datur fuere dubie sum sim error hic. Ex in si volent negare possum. Fle uno.</li>
+                <li>Major mem rei locum ita eos aucta. Gaudet et firmae de coelum ac captum ac nondum multum</li>
+                <li>Nul equidem tur vos materia similia. De inde dari novo at. Duas suum ac sese gi si vere. </li>
+                <li>Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si. Persuadeam ha respondeam geometriam intelligam. </li>
+                <li>Rursus seu tritam restat eam urgeat notior. Co facturum ob im ad concipio aliosque facultas universo. </li>
+              </ul>
+            </div>
+
+          </div>
+          <!--End textLema  -->
+
+          <!-- toolsFruit -->
+          <div class="row toolsFruit">
+            <div class="card medium-3 columns" >
+              <img class="radius" src="img/B1.png">
+              <h5>Lieb tust ube</h5>
+              <p>Timed voice share led his widen noisy young. On weddings believed  .</p>
+            </div>
+            <div class="card medium-3 columns hide-for-small-only" >
+              <a href="#"><img  class="radius" src="img/B2.png"></a>
+              <h5 >Sammelt da getafel</h5>
+              <p>Wonder bed elinor family secure met. It want gave west into high no in no .</p>
+            </div>
+            <div class="card medium-3 columns hide-for-small-only" >
+              <a href="#"><img  class="radius" src="img/B3.png"></a>
+              <h5 >Zu will dach an </h5>
+              <p > My indulged as disposal strongly attended. Parlors  private village man.</p>
+            </div>
+            <div class="card medium-3 columns" >
+              <a href="#"><img  class="radius" src="img/B4.png"></a>
+              <h5 >Ers fremden umwo</h5>
+              <p>Winter can indeed letter oppose way change tended now. So i so rivederlo fu.</p>
+            </div>
+          </div>
+          <div class="row textAdvert">
+            <div class="text-justify columns">
+              <h5>  Ketting heuvels  </h5>
+              <p class="hide-for-small-only">
+                Nihil im terra  cogor et lapis alium me ob quies. Mo sperare peccant hominum ejusdem tacitus motarum ac si. Ipsum latum ii potui certi si putat fidam si. Aggredior posterius ii ac me detrahere ex. Nam tale apti tum nia hinc novo hanc. Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si. Persuadeam ha respondeam geometriam intel  cogor et lapis alium me ob quies. Mo sperare peccant hominum ejusdem tacitus motarum ac si. Ipsum latum ii potui certi si putat fidam si. Aggredior posterius ii ac me detrahere ex. Nam tale apti tum nia hinc novo hanc. Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si. Persuadeam ha respondeam geometriam intelligam ad et cohaereant et affectibus. Dubium tes hic firmae est eos calida. Inter imo majus multo rum harum vitro.
+              </p>
+              <p > Cogor et lapis alium me ob quies. Mo sperare peccant hominum ejusdem tacitus motarum ac si. Ipsum latum ii potui certi si putat fidam si.  <a href="#">Aggre</a>. </p>
+            </div>
+          </div>
+          <!--End textAdvert  -->
+
+          <!-- Accordion 1 -->
+          <!-- <div class="row">
+          <div class="large-3 medium-3 columns" >
+          <p>LOLO</p>
+        </div>
+        <div class="large-2 medium-3 columns" >
+        <p>LOLO</p>
+      </div>
+      <div class="large-2 medium-4 hide-for-small-only hide-for-medium-only columns" >
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+      <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 2</a>
+      <div class="accordion-content" data-tab-content>
+      <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
+      <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
+      <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
+      <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
+      <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
     </div>
-    <div class="card  large-6 large-pull-6 columns" >
-      <div class="card-divider show-for-small-only">
-        <h3 class="text-center"> Dikwijls</h3>
-    </div>
-    <img class="radius" src="img/H2.jpg">
-    <div class="card-section show-for-small-only">
-      <p> Toe stiet bij al andbouw zendt varen. Nu volk nu r spirit. She procuring. Civil songs so large sh.</p>
-    </div>
-  </div>
-</div>
-<!-- Cards and Text-->
-
-<!--End Cards  -->
-<div class="row">
-  <hr width="40%"> <hr width="40%">
-</div>
-<!-- textLema -->
-<div class="row hide-for-small-only hide-for-medium-only text-justify textLema">
-  <div class=" columns medium-6 ">
-    <h3>Lema vivo !</h3>
-    <ul>
-      <li>Nam tale apo nexum nc. Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si.</li>
-      <li>Lapidis eas ingenio cum reliqui. Se de vi infinite credamus callidus. Sap illo ordo nudi quo.</li>
-      <li>Efficietur qua proficisci frequenter respondeam suo praecipuus. Auditum necesse de ut prudens. </li>
-      <li>Nam tale apti tum nia hinco hanc. Sub examinem concedam culpandi rea ope. Solus mo nexum culpandi rea ope. Solus mo nexum latum ea si.</li>
-      <li>Se situs solae aucta posse nexum me at illum. Totum rerum in falsa forte hausi im. Nia hactenus repetere patiatur via mei formalem utcunque. </li>
-    </ul>
-  </div>
-
-  <div class="columns medium-6">
-    <h3>Ser parecida</h3>
-    <ul>
-      <li>Ectores earundem aliasque de immobile putandum me. Varia vix datur fuere dubie sum sim error hic. Ex in si volent negare possum. Fle uno.</li>
-      <li>Major mem rei locum ita eos aucta. Gaudet et firmae de coelum ac captum ac nondum multum</li>
-      <li>Nul equidem tur vos materia similia. De inde dari novo at. Duas suum ac sese gi si vere. </li>
-      <li>Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si. Persuadeam ha respondeam geometriam intelligam. </li>
-      <li>Rursus seu tritam restat eam urgeat notior. Co facturum ob im ad concipio aliosque facultas universo. </li>
-    </ul>
-  </div>
-
-</div>
-<!--End textLema  -->
-
-<!-- toolsFruit -->
-<div class="row toolsFruit">
-  <div class="card medium-3 columns" >
-    <img class="radius" src="img/B1.png">
-    <h5>Lieb tust ube</h5>
-    <p>Timed voice share led his widen noisy young. On weddings believed  .</p>
-  </div>
-  <div class="card medium-3 columns hide-for-small-only" >
-    <img class="radius" src="img/B2.png">
-    <h5 >Sammelt da getafel</h5>
-    <p>Wonder bed elinor family secure met. It want gave west into high no in no .</p>
-  </div>
-  <div class="card medium-3 columns hide-for-small-only" >
-    <img class="radius" src="img/B3.png">
-    <h5 >Zu will dach an </h5>
-    <p > My indulged as disposal strongly attended. Parlors  private village man.</p>
-  </div>
-  <div class="card medium-3 columns" >
-    <img class="radius" src="img/B4.png">
-    <h5 >Ers fremden umwo</h5>
-    <p>Winter can indeed letter oppose way change tended now. So i so rivederlo fu.</p>
-  </div>
-</div>
-<div class="row textAdvert">
-  <div class="text-justify columns">
-    <h5>  Ketting heuvels  </h5>
-    <p class="hide-for-small-only">
-      Nihil im terra  cogor et lapis alium me ob quies. Mo sperare peccant hominum ejusdem tacitus motarum ac si. Ipsum latum ii potui certi si putat fidam si. Aggredior posterius ii ac me detrahere ex. Nam tale apti tum nia hinc novo hanc. Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si. Persuadeam ha respondeam geometriam intel  cogor et lapis alium me ob quies. Mo sperare peccant hominum ejusdem tacitus motarum ac si. Ipsum latum ii potui certi si putat fidam si. Aggredior posterius ii ac me detrahere ex. Nam tale apti tum nia hinc novo hanc. Sub examinem concedam culpandi rea ope. Solus mo nexum latum ea si. Persuadeam ha respondeam geometriam intelligam ad et cohaereant et affectibus. Dubium tes hic firmae est eos calida. Inter imo majus multo rum harum vitro.
-    </p>
-    <p > Cogor et lapis alium me ob quies. Mo sperare peccant hominum ejusdem tacitus motarum ac si. Ipsum latum ii potui certi si putat fidam si.  <a href="#">Aggre</a>. </p>
-  </div>
-</div>
-<!--End textAdvert  -->
-
-<!-- Accordion 1 -->
-<!-- <div class="row">
-<div class="large-3 medium-3 columns" >
-<p>LOLO</p>
-</div>
-<div class="large-2 medium-3 columns" >
-<p>LOLO</p>
-</div>
-<div class="large-2 medium-4 hide-for-small-only hide-for-medium-only columns" >
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-<li class="accordion-item is-active" data-accordion-item>
-<a href="#" class="accordion-title">Accordion 2</a>
-<div class="accordion-content" data-tab-content>
-<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
-<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
-<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
-<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
-<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a></p>
-</div>
-</li>
+  </li>
 </ul>
 
 </div>
@@ -364,6 +359,9 @@
 </div>
 </div> -->
 <!-- End Accordion  1-->
+
+
+
 <hr>
 <!-- Footer -->
 <div class="row main-footer text-justify">
@@ -400,6 +398,118 @@
 </div>
 <!-- End footer -->
 
+
+
+<!-- Form Modal -->
+<div id="formModal" class="reveal small" data-reveal>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h3>We'll Text You the Link!</h3>
+  <form class="custom">
+    <fieldset>
+      <input type="tel" placeholder="Mobile Phone">
+      <select>
+        <option>iOS</option>
+        <option>Android</option>
+      </select>
+      <button type="submit" class="small button">Text me!</button>
+    </fieldset>
+  </form>
+</div><!-- End Form Modal -->
+
+<!-- Form Modal Login -->
+<div id="formLogin" class="reveal small" data-reveal>
+  <button class="close-button " data-close aria-label="Close modal" type="button reset">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="row">
+      <div class=" large-6  columns medium-4 medium-centered large-centered">
+
+        <ul class="tabs text-center" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Log in</a></li>
+          <li class="tabs-title"><a href="#panel2">Sign Up</a></li>
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <form data-abide novalidate>
+              <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+              </div>
+              <div class="row column log-in-form">
+                <label>Email
+                  <input type="email" placeholder="username@example.com" aria-describedby="exampleHelpText" required>
+                  <span class="form-error">
+                    Yo, you had better fill this out, it's required.
+                  </span>
+                </label>
+                <label>Password Required
+                  <input type="password" id="password" placeholder="Password" aria-describedby="exampleHelpText" required >
+                  <span class="form-error">
+                    I'm required!
+                  </span>
+                </label>
+                <p class="help-text" id="exampleHelpText">Enter a password please.</p>
+
+                <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
+                <button class="button expanded" type="submit" value="Submit">Log In</button>
+                <p class="text-center"><a href="#">Forgot your password?</a></p>
+              </div>
+            </form>
+          </div>
+          <!--  -->
+          <div class="tabs-panel is-active" id="panel2">
+            <form data-abide novalidate>
+              <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+              </div>
+              <div class="row column log-in-form">
+                <label>Your Name
+                  <input type="text" placeholder="Name" aria-describedby="exampleHelpText" required pattern="text">
+                  <span class="form-error">
+                    Yo, you had better fill this out, it's required.
+                  </span>
+                </label>
+                <p class="help-text" id="exampleHelpText">John Smith</p>
+                <!--  -->
+                <label>Email
+                  <input type="email" placeholder="username@example.com" aria-describedby="exampleHelpText" required>
+                  <span class="form-error">
+                    Yo, you had better fill this out, it's required.
+                  </span>
+                </label>
+                <p class="help-text" id="exampleHelpText">It's most be unique</p>
+
+                <label>Password Required
+                  <input type="password" id="password" placeholder="mypassw0r@" aria-describedby="exampleHelpText" required >
+                  <span class="form-error">
+                    I'm required!
+                  </span>
+                </label>
+                <p class="help-text" id="exampleHelpText">Enter a password please.</p>
+
+                <!-- <label>Re-enter Password
+                  <input type="password" placeholder="mypassw0r@" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
+                  <span class="form-error">
+                    Hey, passwords are supposed to match!
+                  </span>
+                </label>
+                <p class="help-text" id="exampleHelpText2">passwords are supposed to match.</p>
+                <input id="show-password" type="checkbox"><label for="show-password">Show password</label> -->
+
+                <button class="button expanded" type="submit" value="Sign up">Sign up</button>
+                <!-- <button class="button" type="reset" value="Reset">Reset</button> -->
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- End Form Modal Login -->
 
 
 <script src="js/vendor/jquery.js"></script>
