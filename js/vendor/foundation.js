@@ -2128,7 +2128,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       /**
-       * Goes through a form to find inputs and proceeds to validate them in ways specific to their type. 
+       * Goes through a form to find inputs and proceeds to validate them in ways specific to their type.
        * Ignores inputs with data-abide-ignore, type="hidden" or disabled attributes set
        * @fires Abide#invalid
        * @fires Abide#valid
@@ -6104,17 +6104,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             counter = 0,
             _this = this;
 
-        this.$slides.each(function () {
-          temp = this.getBoundingClientRect().height;
-          $(this).attr('data-slide', counter);
+            this.$slides.each(function () {
+              temp = this.getBoundingClientRect().height;
+              $(this).attr('data-slide', counter);
 
-          if (_this.$slides.filter('.is-active')[0] !== _this.$slides.eq(counter)[0]) {
-            //if not the active slide, set css position and display property
-            $(this).css({ 'position': 'relative', 'display': 'none' });
-          }
-          max = temp > max ? temp : max;
-          counter++;
-        });
+              if (_this.$slides.filter('.is-active')[0] !== _this.$slides.eq(counter)[0]) {
+                //if not the active slide, set css position and display property
+                if (!/mui/g.test($(this)[0].className) && _this.$slides.filter('.is-active')[0] !== _this.$slides.eq(counter)[0]) {
+                  $(this).css({ 'position': 'relative', 'display': 'none' });
+                }
+              }
+              max = temp > max ? temp : max;
+              counter++;
+            });
 
         if (counter === this.$slides.length) {
           this.$wrapper.css({ 'height': max }); //only change the wrapper height property once.
@@ -6192,6 +6194,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             $controls.attr('tabindex', 0)
             //also need to handle enter/return and spacebar key presses
             .on('click.zf.orbit touchend.zf.orbit', function (e) {
+              e.preventDefault();
               e.preventDefault();
               _this.changeSlide($(this).hasClass(_this.options.nextClass));
             });
