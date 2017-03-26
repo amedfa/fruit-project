@@ -9134,10 +9134,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         var max = 0,
             _this = this; // Lock down the `this` value for the root tabs object
 
-        this.$tabContent.find('.' + this.options.panelClass).css('height', '').each(function () {
+        this.$tabContent.find('.' + _this.options.panelClass).css('height', '').each(function () {
 
           var panel = $(this),
               isActive = panel.hasClass('' + _this.options.panelActiveClass); // get the options from the parent instead of trying to get them from the child
+            
 
           if (!isActive) {
             panel.css({ 'visibility': 'hidden', 'display': 'block' });

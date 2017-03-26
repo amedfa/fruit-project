@@ -1,12 +1,5 @@
 $(document).foundation()
 
-// document.getElementById("tablogin").onclick = function() {
-//   document.getElementById("panel1").onclick();
-// }
-//
-// document.getElementById("tabsignup").onclick = function() {
-//   document.getElementById("panel2").onclick();
-// }
 
 $(function() {
   $(".tablogin").click(function() {

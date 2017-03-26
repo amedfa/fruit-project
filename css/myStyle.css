@@ -68,7 +68,6 @@ h5 {
     .newsText p{
       text-align: justify;
     }
-  
 
     /* Buttons
     ================================= */
@@ -82,6 +81,7 @@ h5 {
       }
 
     }
+
     /*max-width 1024px medium*/
     @media (max-width: 64em) {
       img {
