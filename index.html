@@ -94,9 +94,9 @@
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <li><button type="button" class="button" data-open="formLogin">Login</button></li>
+        <li><button type="button" id= "tablogin" class="button" href="#panel1" data-open="formLogin">Login</button></li>
         <li class="divider"></li>
-        <li><button type="button" class="button signup" data-open="formLogin">Sign up</button></li>
+        <li><button type="button" id= "tabsignup" class="button signup"  href="#panel2" data-open="formLogin">Sign up</button></li>
         <li >
           <a class="account show-for-large" data-open="formLogin"><i class="fi-unlock"></i></a>
         </li>
@@ -111,8 +111,8 @@
       <div class="small-12 medium-12 large-12 columns">
         <div class="orbit" role="region" aria-label="Favorite Fruits Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
           <ul class="orbit-container">
-            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+            <!-- <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button> -->
             <li class="is-active orbit-slide">
               <img class="orbit-image" src="img/F1.jpg" alt="Fruit">
               <span class="orbit-caption"><p>Lose eyes get fat shew. Winter can indeed lehange tended now</p></span>
@@ -348,20 +348,48 @@
 
 <!-- Form Modal -->
 <div id="formModal" class="reveal small" data-reveal>
+  <!-- <div id="formModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> -->
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
-  <h3>Write Your Name and your CodeLouisville's class day!</h3>
-  <form>
+  <h4>Write Your Name and your CodeLouisville's class day!</h4>
+  <form data-abide novalidate>
     <fieldset>
-      <input type="text" placeholder="Full Name">
-      <select class classday>
+      <label>Your Name
+        <input type="text" placeholder="Full Name" aria-describedby="exampleHelpText" required pattern="text">
+        <span class="form-error">
+          Yo, you had better fill this out, it's required.
+        </span>
+      </label>
+
+      <select id="select" required>
+        <option value="" disabled selected hidden>Please Choose...</option>
         <option>Monday</option>
+        <option>Thuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
       </select>
-      <button type="submit" class="small button">Text me!</button>
+      <!-- <button type="submit" class="small button"  data-open="notesubscrip">Send Info!</button> -->
+      <button class="button" type="submit" value="Sign up" data-open="notesubscrip">Sign up</button>
+
     </fieldset>
   </form>
 </div><!-- End Form Modal -->
+
+
+<!-- 2d Form Modal -->
+<div class="reveal submit" id="notesubscrip" data-reveal>
+  <h4>Thanks for send your information!</h4>
+  <p>Yet bed any for travel exercise blessing. Indulgence wayhip an insisted so
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <!-- 2d Form Modal end -->
+
 
 <!-- Form Modal Login -->
 <div id="formLogin" class="reveal small" data-reveal>
@@ -371,13 +399,13 @@
   <div class="row">
       <div class=" large-6  columns medium-4 medium-centered large-centered">
 
-        <ul class="tabs text-center" data-tabs id="example-tabs">
+        <ul class="tabs text-center" data-tabs id="example-tabs" data-options="deep_linking:true">
           <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Log in</a></li>
           <li class="tabs-title"><a href="#panel2">Sign Up</a></li>
         </ul>
 
         <div class="tabs-content" data-tabs-content="example-tabs">
-          <div class="tabs-panel is-active" id="panel1">
+          <div class="tabs-panel " id="panel1">
             <form data-abide novalidate>
               <div data-abide-error class="alert callout" style="display: none;">
                 <p><i class="fi-alert"></i> There are some errors in your form.</p>
@@ -404,7 +432,7 @@
             </form>
           </div>
           <!--  -->
-          <div class="tabs-panel is-active" id="panel2">
+          <div class="tabs-panel " id="panel2">
             <form data-abide novalidate>
               <div data-abide-error class="alert callout" style="display: none;">
                 <p><i class="fi-alert"></i> There are some errors in your form.</p>
@@ -458,15 +486,14 @@
 
 <!-- Form Order -->
 <div id="formOrder" class="reveal small" data-reveal>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
+  <button id="bclick_close" class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
   <h3>HP Order Part!</h3>
   <form>
     <fieldset>
-      <input type="button" id="bclick" value="Add..." name="user_interest">
-      <ol id="orderlist">
-      </ol>
+      <div id="orderlist">
+      </div>
       <div id="myDiv">Append here </div>
       <label for ="problem_group">Group Problem</label>
       <select id= "problem_group" name="grup_name">
@@ -494,7 +521,13 @@
       </select>
 
       <label  for="memo_data">Memo:</label>
+
       <textarea id = "memo_data" name="user_memo">This text gets removed</textarea>
+      <input type="button" id="bclick" value="Add..." name="user_interest">
+      <input type="button" id="dclick" value="Del..." name="user_interest">
+      <input type="text" id="dedit" placeholder="Number">
+      <button class="button success" type="submit" value="Submit">Submit</button>
+      <button class="button " type="submit" value="Cancel">Cancel</button>
     </fieldset>
 
   </form>
@@ -504,7 +537,6 @@
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/what-input.js"></script>
 <script src="js/vendor/foundation.js"></script>
-<script src="js/data.js"></script>
 <script src="js/orderlist.js"></script>
 <script src="js/report.js"></script>
 <script src="js/code-app.js"></script>

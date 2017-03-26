@@ -1,5 +1,23 @@
 $(document).foundation()
 
+// document.getElementById("tablogin").onclick = function() {
+//   document.getElementById("panel1").onclick();
+// }
+//
+// document.getElementById("tabsignup").onclick = function() {
+//   document.getElementById("panel2").onclick();
+// }
+
+$(function() {
+  $(".tablogin").click(function() {
+    $("#panel1").addClass("is-active");      //add the class to the clicked element
+  });
+  $(".tabsignup").click(function() {
+    $("#panel2").addClass("is-active");      //add the class to the clicked element
+  });
+});
+
+
 var orderlist_t = new Orderlist();
 
 var orderlistElement = document.getElementById("orderlist");
@@ -40,6 +58,19 @@ var bclickp = document.getElementById("bclick");
 bclickp.onclick = function() {
     copyAllSelect();
     clearAllSelect();
+    orderlist_t.renderInElement(orderlistElement);
+}
+
+var bclickp_close = document.getElementById("bclick_close");
+bclickp_close.onclick = function() {
+    clearAllSelect();
+}
+
+var dclickp = document.getElementById("dclick");
+dclickp.onclick = function() {
+  var x = document.getElementById("dedit").value;
+  console.log(x);
+    orderlist_t.del(x);
     orderlist_t.renderInElement(orderlistElement);
 }
 
