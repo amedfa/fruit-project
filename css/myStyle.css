@@ -1,16 +1,22 @@
 /* Global
 ================================ */
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Droid Serif', serif;
+  font-family: 'Oswald', sans-serif;
   line-height: 1.6;
+  color: #222;
 }
+h1, h2, h3, h4, h5 {
+font-family: 'Petrona', serif;
+color:#053250;
+}
+
 p {
-  font-size: 0.90em;
-  margin-bottom: 1.8em;
+  /*font-size: 0.90em;*/
+  font-size:   0.875rem;
+  margin-bottom: 1em;
 }
-.radius {
-  border-radius: 10px;
-}
+
 
 h5, h4 {
   text-transform: uppercase;
@@ -18,11 +24,14 @@ h5, h4 {
 h5 {
   margin-bottom: 0;
 }
-.row {
-  padding-top: 40px;
+.radius {
+  border-radius: 10px;
 }
-
-
+.sub-h2 {
+  color: #777;
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+}
 .tabs-title {
   display: inline-block;
   float: none;
@@ -74,6 +83,12 @@ h5 {
       border: 0px;
     }
 
+    .dotted {
+      border-style: dotted solid;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
     /* Media Queries
     ================================= */
     /* and max-width 1440px, large screen-only  */
@@ -81,7 +96,9 @@ h5 {
       .productFruit, .mydata-accordion {
         max-width: 90%;
       }
-
+      h2 {
+          font-size: 2.1875rem;
+      }
     }
 
     /*max-width 1024px medium*/
@@ -117,4 +134,8 @@ h5 {
       .productFruit  {
         max-width: 100%;
       }
+      h2 {
+          font-size: 1.5625rem;
+      }
+      1.25rem
     }
