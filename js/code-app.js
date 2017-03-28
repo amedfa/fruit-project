@@ -33,6 +33,7 @@ var ListData = [
    "Replaced Damage HDD","Replaced Defective HDD", "Replaced Damage Cable","Replaced Defective Cable"]
   ]
 
+var fruits = ["Banana", "Orange", "Apple", "Mango", "Blackberry ", "Grapes", "Pineapple"];
 /*Llenado*/
 for (var j = 0; j < listSelect.length; j++) {
   var selectObj = listSelect[j];
@@ -88,3 +89,22 @@ function clearAllSelect (){
     tempSelect.selectedIndex=0;
   }
 }
+
+// Llenado de fruits
+var selectfruit = document.getElementById("selectfruit");
+
+
+loltoHTML = function() {
+  var htmlString ="";
+  for (var i = 0; i < fruits.length; i++) {
+    htmlString += '<option>';
+    htmlString += fruits[i];
+    htmlString += '</option>';
+  }
+  selectfruit.innerHTML += htmlString;
+};
+ loltoHTML();
+
+ quizfruit
+
+ var resetbut = document.getElementById("resetbut");

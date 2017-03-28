@@ -85,8 +85,20 @@ h5 {
 
     .dotted {
       border-style: dotted solid;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-bottom:20px;
+    }
+    .noline {
+      border-style: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .newsText img {
+      max-width: 80%;
+    }
+
+    .section-fruitsX img ,.newsText img {
+        max-width: 75%;
     }
 
     /* Media Queries
@@ -99,43 +111,54 @@ h5 {
       h2 {
           font-size: 2.1875rem;
       }
+      .newsText img {
+        max-width: 60%;
+      }
     }
 
     /*max-width 1024px medium*/
     @media (max-width: 64em) {
-      img {
-        max-width: 80%;
-      }
-      .toolsFruit p, .toolsFruit h5 {
-        font-size: 0.70em;
-      }
-      .productFruit img {
-        max-width: 60%;
-      }
+
+
       .productFruit, .mydata-accordion  {
         max-width: 90%;
+      }
+      .section-fruitsX img , .newsText img  {
+          max-width: 70%;
       }
 
     }
     /* max-width 640px*/
     @media (max-width: 40em) {
-      img {
-        max-width: 60%;
-      }
-      .toolsFruit p, .toolsFruit h5 {
-        font-size: 0.90em;
-      }
 
       .card  {
         padding-left: 10%;
         padding-right: 10%;
       }
 
-      .productFruit  {
-        max-width: 100%;
+      .section-fruitsX img ,.newsText img {
+          max-width: 75%;
       }
+
       h2 {
           font-size: 1.5625rem;
       }
-      1.25rem
     }
+
+    @media (min-width: 40em) {
+      .carrusel {
+        padding-left: 8%;
+      }
+
+      .dotted {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .noline {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+
+    }
+
+    /* min-width 640px*/
