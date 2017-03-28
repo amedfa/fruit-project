@@ -3,7 +3,6 @@
 body {
   font-family: 'Varela Round', sans-serif;
   line-height: 1.6;
-  color: #3a3a3a;
 }
 p {
   font-size: 0.90em;
@@ -69,14 +68,17 @@ h5 {
       text-align: justify;
     }
 
-    /* Buttons
+    /* Tab
     ================================= */
+    .tabs, .tabs-content {
+      border: 0px;
+    }
 
     /* Media Queries
     ================================= */
     /* and max-width 1440px, large screen-only  */
     @media (max-width: 90em) {
-      .productFruit, .textLema {
+      .productFruit, .mydata-accordion {
         max-width: 90%;
       }
 
@@ -93,7 +95,7 @@ h5 {
       .productFruit img {
         max-width: 60%;
       }
-      .productFruit, .textLema  {
+      .productFruit, .mydata-accordion  {
         max-width: 90%;
       }
 
@@ -105,6 +107,11 @@ h5 {
       }
       .toolsFruit p, .toolsFruit h5 {
         font-size: 0.90em;
+      }
+
+      .card  {
+        padding-left: 10%;
+        padding-right: 10%;
       }
 
       .productFruit  {
