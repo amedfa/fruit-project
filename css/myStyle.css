@@ -24,10 +24,13 @@ p {
   font-size:   0.875rem;
   margin-bottom: 1em;
 }
-
+/*
 div {
   border: solid;
-}
+}*/
+
+
+
 
 h5, h4 {
   text-transform: uppercase;
@@ -36,16 +39,22 @@ h5 {
   margin-bottom: 0;
 }
 
-.tabs-title {
-  display: inline-block;
-  float: none;
+.hero {
+background-color: #2c3840;
+  background-size: cover;
+  height: 50vh;
 }
 
-.hero {
-  background-image: url(../img/mangofondo.png);
-  background-size: cover;
-  height: 70vh;
+.title-bar {
+  background-color: #2c3840;
 }
+.pregunta {
+  /*434E3C f39200*/
+  background-color: #F5F4EB;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
 
 .intro {
   padding: 3rem;
@@ -79,6 +88,34 @@ h5 {
 }
 
 
+.section-fruitsX img  {
+  max-width: 65%;
+}
+
+.productFruit p {
+  text-align: justify;
+}
+
+.tabs-title {
+  display: inline-block;
+  float: none;
+}
+
+.tabs-title > a , .accordion-title{
+  font-size: 1.25rem;
+}
+.tabs-title > a[aria-selected='true'] {
+    background: #fff;
+    border-bottom: #1779ba solid;
+    color: #1779ba;
+}
+
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: #f39200 ;
+}
+
+
 /* ========= Top Bar =============== */
 .top-bar ,.top-bar li ,.top-bar button, .off-canvas {
   background: #2c3840; }
@@ -90,43 +127,33 @@ h5 {
 
 
   /* ========= Side Bar =============== */
-.pictureUser {
-  border-radius: 50%;
-}
+  .pictureUser {
+    border-radius: 50%;
+  }
 
-.box-icon {
-  background-color: #569;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+  .box-icon {
+    background-color: #569;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-.box-icon img {
-  border-radius: 50%;
-  display: table;
-  height: 100px;
-  margin:  0 auto;
-  width: 100px;}
+  .box-icon img {
+    border-radius: 50%;
+    display: table;
+    height: 100px;
+    margin:  0 auto;
+    width: 100px;}
 
-  /* ========= End Side Bar =============== */
-
-
-
-    /* Card
-    ================================ */
-    .card {
-      border: none;
-      text-align: center;
-      padding-left: 10%;
-      padding-right: 10%;
-    }
+    /* ========= End Side Bar =============== */
 
 
-    /* Tab
-    ================================= */
+    /* ========= Tab  =============== */
     .tabs, .tabs-content {
       border: 0px;
     }
+    /* ========= End Tab =============== */
 
+    /* ========= Separator =============== */
     .dotted {
       border-style: dotted solid;
       margin-top: 20px;
@@ -137,20 +164,10 @@ h5 {
       margin-top: 10px;
       margin-bottom: 10px;
     }
+    /* ========= End Separator =============== */
 
 
-    .section-fruitsX img  {
-      max-width: 65%;
-    }
-
-    .productFruit p {
-      text-align: justify;
-    }
-
-
-    /* Media Queries
-    ================================= */
-    /* and max-width 1440px, large screen-only  */
+    /* ========= Conditions large =============== */
     @media (max-width: 90em) {
       .productFruit, .mydata-accordion {
         max-width: 90%;
@@ -158,25 +175,21 @@ h5 {
       h2, h1 {
         font-size: 2.1875rem;
       }
-      .newsText img{
+      .productFruit img{
         max-width: 65%;
+      }
     }
-  }
-    /*max-width 1024px medium*/
+    /* ========= Conditions Medium =============== */
     @media (max-width: 64em) {
-
-
       .productFruit, .mydata-accordion  {
         max-width: 90%;
       }
-      .section-fruitsX img , .newsText img{
+      .section-fruitsX img , .productFruit img{
         max-width: 70%;
       }
 
     }
-    /* max-width 640px*/
-    /*@media (max-width: 40em) {*/
-
+    /* ========= Conditions =! Small =============== */
     @media (min-width: 40em) {
       .dotted {
         margin-top: 40px;
@@ -184,10 +197,6 @@ h5 {
       .noline {
         margin-top: 80px;
       }
-    }
-
-
-    @media only screen and (min-width: 40em) {
       .my-img {
         height: 20rem;
         width: 20rem;
@@ -201,3 +210,19 @@ h5 {
         text-align: right;
       }
     }
+
+    /* =========  =============== */
+    /*@media only screen and (min-width: 40em) {
+      .my-img {
+        height: 20rem;
+        width: 20rem;
+      }
+      h1 {
+        padding-top: 4.5rem;
+        text-align: right;
+        font-size: 2.5rem;
+      }
+      .hero p {
+        text-align: right;
+      }
+    }*/
