@@ -24,13 +24,6 @@ p {
   font-size:   0.875rem;
   margin-bottom: 1em;
 }
-/*
-div {
-  border: solid;
-}*/
-
-
-
 
 h5, h4 {
   text-transform: uppercase;
@@ -40,7 +33,7 @@ h5 {
 }
 
 .hero {
-background-color: #2c3840;
+  background-color: #2c3840;
   background-size: cover;
   height: 50vh;
 }
@@ -49,10 +42,11 @@ background-color: #2c3840;
   background-color: #2c3840;
 }
 .pregunta {
-  /*434E3C f39200*/
+  /*434E3C f39200 F5F4EB*/
   background-color: #F5F4EB;
   padding-top: 30px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  padding-bottom: 30px;
 }
 
 
@@ -87,6 +81,9 @@ background-color: #2c3840;
   margin-bottom: 50px;
 }
 
+.especialSubscrption {
+    margin-bottom: 0px;
+}
 
 .section-fruitsX img  {
   max-width: 65%;
@@ -105,14 +102,14 @@ background-color: #2c3840;
   font-size: 1.25rem;
 }
 .tabs-title > a[aria-selected='true'] {
-    background: #fff;
-    border-bottom: #1779ba solid;
-    color: #1779ba;
+  background: #fff;
+  border-bottom: #1779ba solid;
+  color: #1779ba;
 }
 
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-    border-color: #f39200 ;
+  border-color: #f39200 ;
 }
 
 
@@ -123,26 +120,58 @@ background-color: #2c3840;
   .top-bar li, .top-bar a, .top-bar ul , .off-canvas li ,.off-canvas a, .off-canvas ul {
     color: #fff;
   }
+
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    content: '';
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-color: #f39200 transparent transparent;
+    right: 5px;
+    margin-top: -3px;
+  }
+
+  .top-bar .button:hover {
+    background : #f39200;
+  }
+
   /* ========= End Top Bar =============== */
 
 
   /* ========= Side Bar =============== */
-  .pictureUser {
-    border-radius: 50%;
-  }
 
   .box-icon {
-    background-color: #569;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
   .box-icon img {
-    border-radius: 50%;
     display: table;
     height: 100px;
     margin:  0 auto;
     width: 100px;}
+
+    .off-canvas {
+      background: #2c3840;
+    }
+
+    .is-accordion-submenu-parent > a::after {
+      display: block;
+      width: 0;
+      height: 0;
+      border: inset 6px;
+      content: '';
+      border-bottom-width: 0;
+      border-top-style: solid;
+      border-color: #f39200 transparent transparent;
+      position: absolute;
+      top: 50%;
+      margin-top: -3px;
+      right: 1rem;
+    }
 
     /* ========= End Side Bar =============== */
 
@@ -161,8 +190,8 @@ background-color: #2c3840;
     }
     .noline {
       border-style: none;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
     /* ========= End Separator =============== */
 
@@ -212,17 +241,3 @@ background-color: #2c3840;
     }
 
     /* =========  =============== */
-    /*@media only screen and (min-width: 40em) {
-      .my-img {
-        height: 20rem;
-        width: 20rem;
-      }
-      h1 {
-        padding-top: 4.5rem;
-        text-align: right;
-        font-size: 2.5rem;
-      }
-      .hero p {
-        text-align: right;
-      }
-    }*/
