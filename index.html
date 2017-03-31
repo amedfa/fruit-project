@@ -16,7 +16,11 @@
   <!-- Lateral Menu  -->
   <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
     <div class="box-icon">
-      <img id ="pictureUser" src="img/mango1.png">
+      <img id ="pictureUser" src="img/organic.svg">
+      <div class="text-center">
+        <a class="text-center"> A Feria Project</a>
+      </div>
+
     </div>
     <hr>
     <ul class="vertical menu" data-accordion-menu>
@@ -95,9 +99,9 @@
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <li><button type="button" id= "tablogin" class="button" href="#panel1" data-open="formLogin">Login</button></li>
+        <li><button type="button  " id= "tablogin" class="button  " href="#panel1" data-open="formLogin">Login</button></li>
         <li class="divider"></li>
-        <li><button type="button" id= "tabsignup" class="button signup"  href="#panel2" data-open="formLogin">Sign up</button></li>
+        <li><button type="button  " id= "tabsignup" class="button   signup"  href="#panel2" data-open="formLogin">Sign up</button></li>
         <li >
           <a class="account show-for-large" data-open="formLogin"><i class="fi-unlock"></i></a>
         </li>
@@ -106,7 +110,6 @@
   </div>
   <!--Tab Bar  -->
 
-
   <section class="hero">
     <div class="row intro">
       <div class=" small-12 medium-6 large-7 columns">
@@ -114,13 +117,11 @@
         <p>Tips To Help You Eat Fruits! For the best nutritional value and more appealing</p>
       </div>
       <div class=" hide-for-small-only  medium-6 large-5 columns">
-
           <img class=" my-img" src="img/organic.svg" alt="Fruit">
-
+          <!-- http://www.abelandcole.co.uk/content/shop/productfilters/organic.svg -->
       </div>
     </div>
   </section>
-
 
   <!-- Separator  -->
   <div class="small-12 columns"> <hr class="noline"> </div>
@@ -167,46 +168,49 @@
     </div>
   </section>
 
-  <!-- Separator  -->
-  <!-- <div class="small-12 columns"> <hr class="dotted"> </div> -->
-
   <section class="pregunta">
     <div class="row">
-      <div class="small-12 columns text-center lolo">
+      <div class="small-12 columns text-center ">
         <h2>Should I Drink Smoothies?</h2>
         <p class="sub-h2">“Drinking smoothies, especially for breakfast, is one of the easiest way to add some fruit to your diet,” says Joseph Price</p>
       </div>
     </div>
-  </section>
+
   <div class="row productFruit align-middle">
-    <div class="large-6 medium-6 small-12 medium-push-6 column ">
-      <img class="radius" src="img/mango1.png" alt="Fruit">
+    <div class="large-6 medium-6  medium-push-6 column text-center">
+      <img class="radius" src="img/H2.png" alt="Fruit">
     </div>
     <div class="large-6 medium-6 column  medium-pull-6   text-center">
       <h3>Fruit salad</h3>
       <p>There are a number of home recipes for fruit salad that contain different kinds of fruit, or that use a different kind of sauce other than the fruit's own juice or syrup. Common ingredients used in fruit salads include strawberries, pineapple, honeydew, watermelon, grapes, and kiwifruit. Various recipes may call for the addition of nuts, fruit juices, certain vegetables, yogurt, or other ingredients.</p>
       <p class="hide-for-small-only hide-for-medium-only ">One variation is a Waldorf-style fruit salad, which uses a mayonnaise-based sauce. Other recipes use sour cream (such as in ambrosia), yogurt or even mustard as the primary sauce ingredient. A variation on fruit salad uses whipped cream mixed in with many varieties of fruits (usually a mixture of berries), and also often include miniature marshmallows.</p>
-      <a class="secondary button "  data-open="quizfruit">Pick a fruit ! </a>
+      <a class="secondary button " id = "orderFruit" data-open="quizfruit">Pick a fruit ! </a>
     </div>
   </div>
+
 
   <!-- Separator  -->
   <div class="small-12 columns"> <hr class="noline"> </div>
 
   <div class="row productFruit ">
     <div class="large-6 medium-6 column     text-center">
-          <img class="radius" src="img/mango1.png" alt="Fruit">
+          <img class="radius" src="img/H3.png" alt="Fruit">
     </div>
+
     <div class="large-6 medium-6 column     text-center">
           <h3>Fruit cocktail</h3>
           <p>Fruit cocktail is often sold canned and is a staple of cafeterias, but can also be made fresh. The use of the word "cocktail" in the name does not mean that it contains alcohol, but refers to the secondary definition "An appetizer made by combining pieces of food, such as fruit or seafood". Fruit cocktail is sometimes used to make pruno.</p>
           <p class="hide-for-small-only hide-for-medium-only ">In the United States, the USDA stipulates that canned "fruit cocktail" must contain a certain percentage distribution of pears, grapes, cherries, peaches, and pineapples to be marketed as fruit cocktail.</p>
-          <a class="secondary button   " data-open="formOrder"> Order Fuits !</a>
+          <a class="secondary button   " id="bclick" > Subscribe !</a>
     </div>
   </div>
+</section>
 
-  <!-- Separator  -->
-  <div class="small-12 columns"> <hr class="dotted"> </div>
+<div  class="small-12 columns text-center" id = "showFruitlike">
+
+</div>
+<!-- Separator  -->
+<div class="small-12 columns"> <hr class="noline"> </div>
 
   <div class="row">
     <div class="small-12 columns text-center">
@@ -218,19 +222,6 @@
   <div class="row  text-justify mydata-accordion">
     <div class=" columns  ">
       <ul class="accordion text-center" data-responsive-accordion-tabs="tabs medium-accordion  large-tabs">
-        <!-- <li class="accordion-item is-active" data-accordion-item>
-          <a href="#" class="accordion-title">Beneficial during Detox</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Summer is a dandy time to go on a juice cleanse-diet; it primarily means consuming healthy blended juices of various fruits and vegetables to detoxify the body. This is an exceptionally good way to lose all the water weight stored in the body. While on a juice diet the body will use up all the glycogen stored up in the muscles, thus causing temporary weight loss. Also it will rid the body of harmful nutrients.</p>
-          </div>
-        </li> -->
-        <!-- ... -->
-        <!-- <li class="accordion-item " data-accordion-item>
-          <a href="#" class="accordion-title">Aid in Cell Regeneration</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Juices supplement the body cells to act efficiently and help your body to create enough energy without suffering from damaged cells. Fresh juices aid the functioning of DNA and help in the regeneration of healthy tissues.</p>
-          </div>
-        </li> -->
         <!-- ... -->
         <li class="accordion-item is-active" data-accordion-item>
           <a href="#" class="accordion-title">Aids Weight loss</a>
@@ -300,7 +291,7 @@
         </div>
       </div>
       <div class="column column-block">
-        <a href="#"><img  class="radius" src="img/B3.png"></a>
+        <a href="#"><img  class="radius" src="img/B4.png"></a>
         <div class="block">
           <h5 >Montiss KJE5737M</h5>
           <p>You need to empty the strainer basket often (maybe every 2 glasses) as the pulp collected in the basket.</p>
@@ -378,7 +369,6 @@
 
     <!-- Form Modal -->
     <div id="quizfruit" class="reveal small" data-reveal>
-      <!-- <div id="quizfruit" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> -->
       <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -395,8 +385,8 @@
           <select id="selectfruit" required>
             <option value="" disabled selected hidden>Please Choose...</option>
           </select>
-          <button class="button" type="submit" value="Submit" data-open="quizfruitX">Submit</button>
-         <button class="button hide" id="resetbut" type="reset " value="Reset">Reset</button>
+          <button class="button" value="Submit" data-open="quizfruitX">Submit</button>
+         <button class="button hide"  type="reset " value="Reset">Reset</button>
         </fieldset>
       </form>
     </div><!-- End Form Modal -->
@@ -498,61 +488,10 @@
       </div>
         <!-- End Form Modal Login -->
 
-        <!-- Form Order -->
-        <div id="formOrder" class="reveal small" data-reveal>
-          <button id="bclick_close" class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h3>HP Order Part!</h3>
-          <form>
-            <fieldset>
-              <div id="orderlist">
-              </div>
-              <div id="myDiv">Append here </div>
-              <label for ="problem_group">Group Problem</label>
-              <select id= "problem_group" name="grup_name">
-                <option></option>
-              </select>
-
-              <label for ="reason_group">Reason Group</label>
-              <select id= "reason_group" name="warranty_status">
-                <option></option>
-              </select>
-
-              <label for ="problem_code">Problem Code</label>
-              <select id= "problem_code" name="grup_name">
-                <option></option>
-              </select>
-
-              <label for ="reason_code">Reason Code</label>
-              <select id= "reason_code" name="description_problem">
-                <option></option>
-              </select>
-
-              <label for ="component_code">Diagnosis</label>
-              <select id= "component_code" name="diagnosis_problem">
-                <option></option>
-              </select>
-
-              <label  for="memo_data">Memo:</label>
-
-              <textarea id = "memo_data" name="user_memo">This text gets removed</textarea>
-              <input type="button" id="bclick" value="Add..." name="user_interest">
-              <input type="button" id="dclick" value="Del..." name="user_interest">
-              <input type="text" id="dedit" placeholder="Number">
-              <button class="button success" type="submit" value="Submit">Submit</button>
-              <button class="button " type="submit" value="Cancel">Cancel</button>
-            </fieldset>
-
-          </form>
-        </div><!-- End Form Order -->
-
 
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/what-input.js"></script>
         <script src="js/vendor/foundation.js"></script>
-        <script src="js/orderlist.js"></script>
-        <script src="js/report.js"></script>
         <script src="js/code-app.js"></script>
       </body>
       </html>
